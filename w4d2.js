@@ -1,6 +1,6 @@
 /* 
-//*I. Variables & Datatypes 
-//*A. Q + A
+//* I. Variables & Datatypes 
+//* A. Q + A
 1) How do we assign a value to a variable? 
 using the assignment operator (=)
 
@@ -26,7 +26,7 @@ we should should do it because it is understood by programmers of all type. It a
 depends on the level of experience, but generally the majority of the time will be spent solving the problem then typing the code.
 */
 
-//*B. Strings
+//* B. Strings
 /*For all other questions that involve writing code, you can solve them via the following instructions.*/
 
 //Create a variable called firstVariable
@@ -56,7 +56,7 @@ const yourName = 'Romy Jean-Pierre';
 console.log("Hello, name is " + yourName);
 
 
-//*C. Booleans
+// *C. Booleans
 /*Using the provided variable definitions, replace the blanks so that all log statements print true in the console. Answers should be all be valid JS syntax and not weird things that don't make sense but happen to print true to the console*/
 
   const a = 4;
@@ -105,4 +105,78 @@ if (myAge >= 16) {
 }
 else {
     console.log  ("Sorry, you're too young.");
+}
+
+
+//* II. Loops
+/*Remember: USE let when you initialize your for loops!
+
+This is GOOD: for(let i = 0; i < 100; i++)
+
+This is NO GOOD: for(i = 0; i < 100; i++)*/
+
+//* A. The basics
+//Write a loop that will print out all the numbers from 0 to 10, inclusive
+
+for(let counter = 0; counter <=10; counter++) 
+{
+    console.log(counter);
+}
+
+//Write a loop that will print out all the numbers from 10 up to and including 400
+for(let i = 10; i <= 400; i++) {console.log(i);}
+
+
+//Write a loop that will print out every third number starting with 12 and going no higher than 4000
+
+for(let counter = 12; counter <= 4000; counter += 3) {
+console.log(counter);
+}
+
+//* B. Get even
+/*Print out the numbers that are within the range of 1 - 100
+Adjust your code to add a message next to even numbers only that says: "<-- is an even number"*/
+
+let X = 1; 
+
+while(X <= 100) {
+    if (X % 2 === 0){
+        console.log(`${X} <-- is an even number`);
+    } else {
+
+    console.log(`${X} `);
+    }
+   X++;  
+}
+
+//* C. Give me Five
+//For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
+//Add to the code to print out "I found a number. Three is a crowd" if the number is a multiple of three
+//For numbers divisible by both three and five, be sure your code prints both messages
+
+for(let num = 0; num <= 100; num ++) {
+    console.log(num);
+     if (num % 3 ===0 & num % 5 ===0){
+            console.log(`I found a ${num} . High five! I found a number ${num}. Three is a crowd`);
+    }
+    else if (num % 5 === 0){
+        console.log(`I found a ${num} . High five!`);
+    }  else if(num % 3 === 0) {
+        console.log(`I found a number ${num}. Three is a crowd`);
+    } 
+}
+
+//* D. Savings account
+/*1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+Check your work! Your bank_account should have $55 in it.*/
+let bank_account = 0;
+for(let i = 1; i <= 10; i++) {
+    console.log (bank_account += i); 
+}
+
+/*2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+Check your work! Your bank_account should have $10,100 in it. */   
+let bank_account1 = 0;
+for(let i = 1; i <= 100; i++) {
+    console.log (bank_account1 += i*2); 
 }
