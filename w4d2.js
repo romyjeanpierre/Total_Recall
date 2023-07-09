@@ -344,3 +344,50 @@ console.log(`Thom is rocking a ${thomsCloset[0][0]}, ${thomsCloset[1][1]} and ${
 //Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
 thomsCloset[1][2] = 'Footie Pajamas';
 console.log(thomsCloset);
+
+//* IV. Functions
+//* A. printGreeting
+/*Do you think you could write a function called printGreeting with a parameter name that returns a greeting with the argument interpolated into the greeting?*/
+printGreeting("slimer");
+function printGreeting(name) {
+    console.log(`Hello there, ${name}! `)
+}
+
+//* B. printCool
+/*Write a function printCool that accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.*/
+printCool("Captain Reynolds");
+function printCool(name) {
+    console.log(`"${name} is cool"`)
+}
+
+//* C. calculateCube
+/*Write a function calculateCube that takes a single number and prints the volume of a cube made from that number.*/
+
+function calculateCube(side){
+    let calculateCube = side ** 3;
+    console.log(calculateCube);      
+}
+calculateCube(5)
+
+//* D. isVowel
+/*Write a function isVowel that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case. Test your function on every vowel and make sure it's working. In general, when you write functions, take a minute to test them with different values to make sure they behave the way you want.*/
+/*function isVowel(character){
+    if(character =="a" || character == "e" || character == "i" || character "o" || character "u"){
+        return true
+    } else {
+        return false
+    }
+}*/
+//* E. getTwoLengths
+/*Write a function getTwoLengthsthat accepts two parameters (strings). The function should return an array of numbers where each number is the length of the corresponding string.*/
+
+//* F. getMultipleLengths
+/*Write a function getMultipleLengthsthat accepts a single parameter as an argument: an array of strings. The function should return an array of numbers where each number is the length of the corresponding string.*/
+
+//* G. maxOfThree
+/*Define a function maxOfThreethat takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned. Be sure to test it with larger values in each of the three locations.*/
+/*Did you use Google and find Math.max()? If so, great job! Very resourceful—keep looking stuff up! However, for this particular question, we need you to submit a solution that does not use Math.max()*/
+
+//*H. printLongestWord
+/*Write a function printLongestWordthat accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.*/
+
